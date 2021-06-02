@@ -8,7 +8,6 @@
     android:background="#ffffff"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context="com.pinery.audioedit.MainActivity"
     >
 
   <Button
