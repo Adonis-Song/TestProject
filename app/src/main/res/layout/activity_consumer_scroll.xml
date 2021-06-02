@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consumeScrollview.ConsumerScrollActivity">
+
+<!--    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:text="你在说什么"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/holo_red_light"
+                        android:layout_height="@dimen/DP50"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DP50"
+                        android:text="text  1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/holo_red_light"
+                        android:layout_height="@dimen/DP50"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DP50"
+                        android:text="text  1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/holo_red_light"
+                        android:layout_height="@dimen/DP50"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DP50"
+                        android:text="text  1"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@android:color/holo_red_light"
+                        android:layout_height="@dimen/DP50"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DP50"
+                        android:text="text  1"/>
+
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>-->
+
+<!--    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_consumer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/DP50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_play"
+        />
+
+    <TextView
+        android:id="@+id/tv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:textSize="30dp"
+        android:layout_marginBottom="@dimen/DP50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_consumer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/player_consumer"/>-->
+
+
+    <com.arthenica.mysongapplication.consumeScrollview.ConsumerMyScroller
+        android:id="@+id/scroll"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.arthenica.mysongapplication.consumeScrollview.ConsumerViewGroup
+                android:id="@+id/consumer_view_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"/>
+
+            </com.arthenica.mysongapplication.consumeScrollview.ConsumerViewGroup>
+
+<!--            <View
+                android:layout_width="600dp"
+                android:layout_height="0dp"/>-->
+            <View
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@android:color/black"/>
+        </LinearLayout>
+
+
+
+    </com.arthenica.mysongapplication.consumeScrollview.ConsumerMyScroller>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_select"
+        android:text="select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_cancel"
+        android:text="select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

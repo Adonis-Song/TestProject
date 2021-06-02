@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ConsumerFrameLayout">
+        <attr name="laneInterval" format="dimension"/>
+        <attr name="laneId" format="integer"/>
+    </declare-styleable>
+
+</resources>

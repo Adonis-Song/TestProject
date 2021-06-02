@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".example.ExampleActivity">
+
+    <com.arthenica.mysongapplication.example.MyHorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:fillViewport="true"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <com.arthenica.mysongapplication.example.MyViewGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divide_line"
+                android:layout_width="@dimen/DP1000"
+                android:layout_height="90dp"
+                android:background="@drawable/drawable_gradient"/>
+
+<!--            <com.arthenica.mysongapplication.example.MyView
+                android:id="@+id/tv_long"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/divide_line"
+                android:background="@android:color/black"/>-->
+
+                <com.arthenica.mysongapplication.example.MyScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:background="@android:color/holo_blue_light"
+                    android:layout_below="@+id/divide_line">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.arthenica.mysongapplication.example.MyView
+                            android:id="@+id/tv_long"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/holo_green_light"
+                            />
+
+                    </RelativeLayout>
+
+                </com.arthenica.mysongapplication.example.MyScrollView>
+
+        </com.arthenica.mysongapplication.example.MyViewGroup>
+
+    </com.arthenica.mysongapplication.example.MyHorizontalScrollView>
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1224345"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="disappear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
