@@ -10,6 +10,20 @@ import com.arthenica.mysongapplication.audio.audioedit.util.LogUtil;
  * App
  */
 public class App extends Application {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
 
   public static App sInstance;
 
